@@ -1,17 +1,17 @@
 public class Solution 
 {
-    public int[] TwoSum(int[] nums, int target) 
+    public int[] Sum(int[] nums, int result) 
     {
         for (int i = 0; i < nums.Length; i++) 
         {
             for (int j = i + 1; j < nums.Length; j++) 
             {
-                if (nums[j] == target - nums[i]) 
+                if (nums[j] == result - nums[i]) 
                 {
                     return new int[] { i, j };
                 }
             }
         }
-        throw new System.InvalidOperationException("No two sum solution");
+        throw new System.InvalidOperationException("No solution");
     }
 }
